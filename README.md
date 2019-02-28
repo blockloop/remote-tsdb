@@ -20,7 +20,7 @@ Remote TSDB is [TSDB](https://github.com/prometheus/tsdb) wrapped with HTTP
 endpoints for RemoteRead and RemoteWrite. You can run `remote-tsdb` on a
 persistent disk and run an ephemeral instance of Prometheus (i.e. in
 Kubernetes), configured to remote-read and remote-write against
-`remote-tsdb`. You can also write against the running `remote-tsdb` whild
-Prometheus is running.
+`remote-tsdb`. You can also write directly to the TSDB even while Prometheus
+is connected to it.
 
 See [the Prometheus docs](https://prometheus.io/docs/prometheus/latest/storage/#remote-storage-integrations) for more details
