@@ -23,4 +23,6 @@ Kubernetes), configured to remote-read and remote-write against
 `remote-tsdb`. You can also write directly to the TSDB even while Prometheus
 is connected to it.
 
+To see an example, see the [docker-compose.yml](docker-compose.yml) file.
+
 See [the Prometheus docs](https://prometheus.io/docs/prometheus/latest/storage/#remote-storage-integrations) for more details
