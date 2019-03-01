@@ -32,7 +32,7 @@ func Init() error {
 	flag.BoolVar(&config.NoLockFile, "no-lockfile", false, "disable the use of the TSDB lockfile")
 
 	var wals string
-	flag.StringVar(&wals, "wal-segment-size", "10MB", "Write Ahead Log segment size")
+	flag.StringVar(&wals, "wal-segment-size", "16MB", "Write Ahead Log segment size")
 	flag.Parse()
 
 	s, err := bytefmt.ToBytes(wals)
